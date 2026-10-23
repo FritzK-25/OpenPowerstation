@@ -16,7 +16,7 @@ matplotlib==3.11.2
 numpy==2.5.3
 packaging==26.3
 paho-mqtt==2.1.0
-pillow==12.3.0
+pillow==13.0.0
 platformdirs==4.12.2
 pluggy==1.6.0
 portalocker==4.4.0
