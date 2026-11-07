@@ -25,7 +25,7 @@ classifiers = [
 # packages belong in the extras below. home-assistant/opendp3/requirements-headless.in
 # pins this set, plus what the app wrapper imports itself, for the image's hashed
 # lock; tests/test_packaging_extras.py fails if a pin leaves these ranges.
-dependencies = ["bleak>=1,<4", "pycryptodome>=3.23,<4", "protobuf>=6.30,<8", "platformdirs>=4,<5", "portalocker>=3,<5", "httpx>=0.28,<1", "paho-mqtt>=2,<3"]
+dependencies = ["bleak>=1,<4", "pycryptodome>=3.23,<5", "protobuf>=6.30,<8", "platformdirs>=4,<5", "portalocker>=3,<5", "httpx>=0.28,<1", "paho-mqtt>=2,<3"]
 
 [project.optional-dependencies]
 # Static chart rendering for evidence exports. `openpowerstation export` is a CLI
@@ -35,7 +35,7 @@ charts = ["matplotlib>=3.9,<4", "numpy>=2,<3"]
 # packaging/prepare.py draws the Windows version resource. Pillow used to reach
 # it by accident, as a transitive dependency of matplotlib; declared here so it
 # no longer depends on that accident.
-packaging = ["pillow>=10,<13"]
+packaging = ["pillow>=10,<14"]
 # The desktop application. It includes chart rendering because its exports page
 # calls the same evidence export the CLI does.
 gui = ["openpowerstation[charts]", "PySide6>=6.8,<7", "pyqtgraph>=0.13,<0.15"]
