@@ -1,3 +1,7 @@
+# 0.3.2
+
+- Update the Windows and Home Assistant builds to PyCryptodome 4.4.0.
+
 # 0.3.1
 
 - Replace the affected python-ecdsa dependency with native OpenSSL 3 for the
