@@ -44,6 +44,7 @@ def test_personal_identifiers_are_found(text):
     "FritzK-25@users.noreply.github.com",
     "49699333+dependabot[bot]@users.noreply.github.com",
     "noreply@github.com",
+    "Signed-off-by: dependabot[bot] <support@github.com>",
     "email@example.test",
     "user@example.com",
     "AA:BB:CC:DD:EE:FF and aa-bb-cc-dd-ee-ff",
