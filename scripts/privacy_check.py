@@ -34,7 +34,7 @@ EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-
 # Addresses that identify no one: GitHub's private-email and bot addresses,
 # no-reply senders, and the domains reserved for documentation (RFC 2606).
 ALLOWED_EMAIL = re.compile(
-    r"(?:[^@\s]+@users\.noreply\.github\.com|noreply@github\.com|noreply@anthropic\.com"
+    r"(?:[^@\s]+@users\.noreply\.github\.com|(?:noreply|support)@github\.com|noreply@anthropic\.com"
     r"|[^@\s]+@(?:[A-Za-z0-9-]+\.)*(?:example\.(?:com|org|net)|example|test|invalid|localhost))$",
     re.IGNORECASE,
 )
